@@ -27,11 +27,11 @@ var authersList = [
     `Oscar Wilde`,
 ];
 
-var nBefore = -1;
+var nBefore = -1, nAfter;
 function getQoute() {
-    var nAfter = Math.floor(Math.random() * 10);
+    nAfter = Math.floor(Math.random() * 10);
     while (nBefore === nAfter) {
-        var nAfter = Math.floor(Math.random() * 10);
+        nAfter = Math.floor(Math.random() * 10);
     }
     qoute.innerHTML = quotesList[nAfter];
     auther.innerHTML = `--${authersList[nAfter]}`;
